@@ -57,6 +57,7 @@ html, body {
     display: flex;
     flex-direction: column;
     color: var(--foreground-color);
+    min-width: 15rem;
 }
 
 .sidebar-item {
@@ -82,4 +83,16 @@ html, body {
 }
 #content-area a {
     color: #7BFA4C;
+}
+
+#screenshot-gallery {
+    margin-top: 2rem;
+    overflow-x: scroll;
+    white-space: nowrap;
+    text-align: center;
+}
+
+.screenshot {
+    width: 12rem;
+    padding: 0rem 0.5rem 0rem 0.5rem;
 }
