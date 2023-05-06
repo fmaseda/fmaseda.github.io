@@ -21,6 +21,7 @@
 html, body {
     font-family: sans-serif;
     margin:0px;
+    background-color: var(--background-color);
 }
 
 #page {
@@ -31,7 +32,6 @@ html, body {
     height: 100vh;                          /* height of page is viewport height */
     padding: 0px;
     margin: 0px;
-    background-color: var(--background-color);
 }
 
 #titlebar {
@@ -43,6 +43,7 @@ html, body {
     color: #ff0000;
     font-size: 3rem;
     font-weight: bold;
+    white-space: nowrap;
 }
 
 .icon {
