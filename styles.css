@@ -75,6 +75,10 @@ html, body {
     text-decoration: underline;
 }
 
+.appstore {
+    max-width: 10rem;
+}
+
 #content-area {
     padding: 0rem;
     overflow: scroll;
