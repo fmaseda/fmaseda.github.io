@@ -3,16 +3,31 @@
 <head>
     <title>Upcoming Deadlines</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
-    <link rel="icon" type="image/x-icon" href="DeadlineAppIcon.png">
+    <link rel="icon" type="image/x-icon" href="DeadlineAppIcon_rgba.png">
     <meta name="apple-itunes-app" content="app-id=6447928276">
+
+    <script>
+    const faviconEl = document.querySelector('link[rel="icon"]')
+
+    const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)')
+    mediaQuery.addEventListener('change', themeChange)
+
+    function themeChange(event) {
+      if (event.matches) {
+        faviconEl.setAttribute('href', 'DeadlineAppIconDark_rgba.png')
+      } else {
+        faviconEl.setAttribute('href', 'DeadlineAppIcon_rgba.png')
+      }
+    }
+    </script>
 </head>
 
 <body>
 <div id="page">
 
 <div id="titlebar">
-    <img class="icon light" src="DeadlineAppIcon.png" />
-    <img class="icon dark" src="DeadlineAppIconDark.png" />
+    <img class="icon light" src="DeadlineAppIcon_rgba.png" />
+    <img class="icon dark" src="DeadlineAppIconDark_rgba.png" />
     <span>Upcoming Deadlines</span>
 </div>
 
