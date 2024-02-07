@@ -3,31 +3,17 @@
 <head>
     <title>Upcoming Deadlines</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
-    <link rel="icon" type="image/x-icon" href="DeadlineAppIcon_rgba.png">
+    <link rel="icon" type="image/x-icon" href="Icons/DeadlineAppIcon_rgba.png">
     <meta name="apple-itunes-app" content="app-id=6447928276">
-
-    <script>
-    const faviconEl = document.querySelector('link[rel="icon"]')
-
-    const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)')
-    mediaQuery.addEventListener('change', themeChange)
-
-    function themeChange(event) {
-      if (event.matches) {
-        faviconEl.setAttribute('href', 'DeadlineAppIconDark_rgba.png')
-      } else {
-        faviconEl.setAttribute('href', 'DeadlineAppIcon_rgba.png')
-      }
-    }
-    </script>
+    <script src="setFavicon.js"></script>
 </head>
 
 <body>
 <div id="page">
 
 <div id="titlebar">
-    <img class="icon light" src="DeadlineAppIcon_rgba.png" />
-    <img class="icon dark" src="DeadlineAppIconDark_rgba.png" />
+    <img class="icon light" src="Icons/DeadlineAppIcon_rgba.png"  alt="Deadlines icon"/>
+    <img class="icon dark" src="Icons/DeadlineAppIconDark_rgba.png"  alt="Deadlines icon"/>
     <span>Upcoming Deadlines</span>
 </div>
 
@@ -36,8 +22,8 @@
     <a class="sidebar-item" href="mailto:floyd.a.maseda@gmail.com">Contact us</a>
     <a class="sidebar-item" href="#">Privacy policy</a>
     <a class="sidebar-item" href="https://apps.apple.com/app/upcoming-deadlines/id6447928276">
-        <img class="appstore light" src="app_store_light.png" />
-        <img class="appstore dark" src="app_store_dark.png" />
+        <img class="appstore light" src="Icons/app_store_light.png" alt="App Store icon"/>
+        <img class="appstore dark" src="Icons/app_store_dark.png"  alt="App Store icon"/>
     </a>
 </nav>
 
@@ -48,7 +34,7 @@
 
     <h3>App Analytics</h3>
 
-    <p>To help us better understand how people use the Upcoming Deadlines and to continue improving the app, we use analytics information provided by <a href="https://developer.apple.com/app-store-connect/">App Store Connect</a>. These services provide us with some generic usage data that are completely anonymous and cannot personally identify you in any way.</p>
+    <p>To help us better understand how people use Upcoming Deadlines and to continue improving the app, we use analytics information provided by <a href="https://developer.apple.com/app-store-connect/">App Store Connect</a>. These services provide us with some generic usage data that are completely anonymous and cannot personally identify you in any way.</p>
 
     <h3>Contact Us</h3>
 
